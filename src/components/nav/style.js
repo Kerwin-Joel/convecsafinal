@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Navigation = styled.nav`
-  display: flex;
+	display: flex;
   justify-content: space-between;
   background-color: #479ed45c;
   padding:1% 10%;
