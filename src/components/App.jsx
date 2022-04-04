@@ -1,12 +1,12 @@
 import React from 'react';
 import { Nav } from './nav/Nav';
-import Projects from './Pages/Projects/Projects';
+import { Footer } from './footer/Footer';
 
 export const App = () => {
-	return (
-		<>
-			<Nav />
-			<Projects />
-		</>
-	);
-};
+  return (
+    <>
+      <Nav/>
+      <Footer/>
+    </>
+  )
+}
