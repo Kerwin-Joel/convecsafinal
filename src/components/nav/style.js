@@ -125,6 +125,7 @@ export const ModalMenu = styled.ul`
     
     display: block;
     right: 0;
+    z-index: 1;
   }
 
   @keyframes slidein {
