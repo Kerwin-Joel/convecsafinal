@@ -14,6 +14,7 @@ import {
 	CardImage,
 	Cards,
 	CardThumb,
+	Center,
 	Container,
 	Link,
 	Paragraph,
@@ -34,141 +35,141 @@ const Projects = () => {
 		<Wrapper>
 			<Section>
 				<Container>
-					<Title>
-						our products <span></span>
-					</Title>
-					<Cards>
-						<Card>
-							<CardThumb>
-								<CardImage src={img1}></CardImage>
-							</CardThumb>
-							<CardContent>
-								<Subtitle>
-									<Link href="/">Quisque a quam dictum, rutrum</Link>
-								</Subtitle>
-								<Paragraph>
-									Lorem ipsum dolor sit amet, coetuer adipiscing elit. Praesent
-									vestibulum molestie nonummy varius.
-								</Paragraph>
-							</CardContent>
-						</Card>
-						<Card>
-							<CardThumb>
-								<CardImage src={img2}></CardImage>
-							</CardThumb>
-							<CardContent>
-								<Subtitle>
-									<Link href="/">Quisque a quam dictum, rutrum</Link>
-								</Subtitle>
-								<Paragraph>
-									Lorem ipsum dolor sit amet, coetuer adipiscing elit. Praesent
-									vestibulum molestie nonummy varius.
-								</Paragraph>
-							</CardContent>
-						</Card>
-						<Card>
-							<CardThumb>
-								<CardImage src={img3}></CardImage>
-							</CardThumb>
-							<CardContent>
-								<Subtitle>
-									<Link href="/">Quisque a quam dictum, rutrum</Link>
-								</Subtitle>
-								<Paragraph>
-									Lorem ipsum dolor sit amet, coetuer adipiscing elit. Praesent
-									vestibulum molestie nonummy varius.
-								</Paragraph>
-							</CardContent>
-						</Card>
-					</Cards>
-					<Cards>
-						<Card>
-							<CardThumb>
-								<CardImage src={img4}></CardImage>
-							</CardThumb>
-							<CardContent>
-								<Subtitle>
-									<Link href="/">Quisque a quam dictum, rutrum</Link>
-								</Subtitle>
-								<Paragraph>
-									Lorem ipsum dolor sit amet, coetuer adipiscing elit. Praesent
-									vestibulum molestie nonummy varius.
-								</Paragraph>
-							</CardContent>
-						</Card>
-						<Card>
-							<CardThumb>
-								<CardImage src={img5}></CardImage>
-							</CardThumb>
-							<CardContent>
-								<Subtitle>
-									<Link href="/">Quisque a quam dictum, rutrum</Link>
-								</Subtitle>
-								<Paragraph>
-									Lorem ipsum dolor sit amet, coetuer adipiscing elit. Praesent
-									vestibulum molestie nonummy varius.
-								</Paragraph>
-							</CardContent>
-						</Card>
-						<Card>
-							<CardThumb>
-								<CardImage src={img6}></CardImage>
-							</CardThumb>
-							<CardContent>
-								<Subtitle>
-									<Link href="/">Quisque a quam dictum, rutrum</Link>
-								</Subtitle>
-								<Paragraph>
-									Lorem ipsum dolor sit amet, coetuer adipiscing elit. Praesent
-									vestibulum molestie nonummy varius.
-								</Paragraph>
-							</CardContent>
-						</Card>
-					</Cards>
-					<Cards>
-						<Card>
-							<CardThumb>
-								<CardImage src={img7}></CardImage>
-							</CardThumb>
-							<CardContent>
-								<Subtitle>
-									<Link href="/">Quisque a quam dictum, rutrum</Link>
-								</Subtitle>
-								<Paragraph>
-									Lorem ipsum dolor sit amet, coetuer adipiscing elit. Praesent
-									vestibulum molestie nonummy varius.
-								</Paragraph>
-							</CardContent>
-						</Card>
-						<Card>
-							<CardThumb>
-								<CardImage src={img8}></CardImage>
-							</CardThumb>
-							<CardContent>
-								<Subtitle>
-									<Link href="/">Quisque a quam dictum, rutrum</Link>
-								</Subtitle>
-								<Paragraph>
-									Lorem ipsum dolor sit amet, coetuer adipiscing elit. Praesent
-									vestibulum molestie nonummy varius.
-								</Paragraph>
-							</CardContent>
-						</Card>
-						<Card>
-							<CardThumb>
-								<CardImage src={img9}></CardImage>
-							</CardThumb>
-							<CardContent>
-								<Subtitle>
-									<Link href="/">Quisque a quam dictum, rutrum</Link>
-								</Subtitle>
-								<Paragraph>
-									Lorem ipsum dolor sit amet, coetuer adipiscing elit. Praesent
-									vestibulum molestie nonummy varius.
-								</Paragraph>
-							</CardContent>
-						</Card>
-					</Cards>
+					<Center>
+						<Title>
+							our products <span></span>
+						</Title>
+						<Cards>
+							<Card>
+								<CardThumb>
+									<CardImage src={img1}></CardImage>
+								</CardThumb>
+								<CardContent>
+									<Subtitle>
+										<Link href="/">Quisque a quam dictum, rutrum</Link>
+									</Subtitle>
+									<Paragraph>
+										Lorem ipsum dolor sit amet, coetuer adipiscing elit.
+										Praesent vestibulum molestie nonummy varius.
+									</Paragraph>
+								</CardContent>
+							</Card>
+							<Card>
+								<CardThumb>
+									<CardImage src={img2}></CardImage>
+								</CardThumb>
+								<CardContent>
+									<Subtitle>
+										<Link href="/">Quisque a quam dictum, rutrum</Link>
+									</Subtitle>
+									<Paragraph>
+										Lorem ipsum dolor sit amet, coetuer adipiscing elit.
+										Praesent vestibulum molestie nonummy varius.
+									</Paragraph>
+								</CardContent>
+							</Card>
+							<Card>
+								<CardThumb>
+									<CardImage src={img3}></CardImage>
+								</CardThumb>
+								<CardContent>
+									<Subtitle>
+										<Link href="/">Quisque a quam dictum, rutrum</Link>
+									</Subtitle>
+									<Paragraph>
+										Lorem ipsum dolor sit amet, coetuer adipiscing elit.
+										Praesent vestibulum molestie nonummy varius.
+									</Paragraph>
+								</CardContent>
+							</Card>
+
+							<Card>
+								<CardThumb>
+									<CardImage src={img4}></CardImage>
+								</CardThumb>
+								<CardContent>
+									<Subtitle>
+										<Link href="/">Quisque a quam dictum, rutrum</Link>
+									</Subtitle>
+									<Paragraph>
+										Lorem ipsum dolor sit amet, coetuer adipiscing elit.
+										Praesent vestibulum molestie nonummy varius.
+									</Paragraph>
+								</CardContent>
+							</Card>
+							<Card>
+								<CardThumb>
+									<CardImage src={img5}></CardImage>
+								</CardThumb>
+								<CardContent>
+									<Subtitle>
+										<Link href="/">Quisque a quam dictum, rutrum</Link>
+									</Subtitle>
+									<Paragraph>
+										Lorem ipsum dolor sit amet, coetuer adipiscing elit.
+										Praesent vestibulum molestie nonummy varius.
+									</Paragraph>
+								</CardContent>
+							</Card>
+							<Card>
+								<CardThumb>
+									<CardImage src={img6}></CardImage>
+								</CardThumb>
+								<CardContent>
+									<Subtitle>
+										<Link href="/">Quisque a quam dictum, rutrum</Link>
+									</Subtitle>
+									<Paragraph>
+										Lorem ipsum dolor sit amet, coetuer adipiscing elit.
+										Praesent vestibulum molestie nonummy varius.
+									</Paragraph>
+								</CardContent>
+							</Card>
+
+							<Card>
+								<CardThumb>
+									<CardImage src={img7}></CardImage>
+								</CardThumb>
+								<CardContent>
+									<Subtitle>
+										<Link href="/">Quisque a quam dictum, rutrum</Link>
+									</Subtitle>
+									<Paragraph>
+										Lorem ipsum dolor sit amet, coetuer adipiscing elit.
+										Praesent vestibulum molestie nonummy varius.
+									</Paragraph>
+								</CardContent>
+							</Card>
+							<Card>
+								<CardThumb>
+									<CardImage src={img8}></CardImage>
+								</CardThumb>
+								<CardContent>
+									<Subtitle>
+										<Link href="/">Quisque a quam dictum, rutrum</Link>
+									</Subtitle>
+									<Paragraph>
+										Lorem ipsum dolor sit amet, coetuer adipiscing elit.
+										Praesent vestibulum molestie nonummy varius.
+									</Paragraph>
+								</CardContent>
+							</Card>
+							<Card>
+								<CardThumb>
+									<CardImage src={img9}></CardImage>
+								</CardThumb>
+								<CardContent>
+									<Subtitle>
+										<Link href="/">Quisque a quam dictum, rutrum</Link>
+									</Subtitle>
+									<Paragraph>
+										Lorem ipsum dolor sit amet, coetuer adipiscing elit.
+										Praesent vestibulum molestie nonummy varius.
+									</Paragraph>
+								</CardContent>
+							</Card>
+						</Cards>
+					</Center>
 				</Container>
 			</Section>
 			<Parallax>

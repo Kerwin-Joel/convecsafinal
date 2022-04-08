@@ -13,17 +13,13 @@ export const Section = styled.section`
 `;
 
 export const Container = styled.div`
-	width: 1170px;
-	margin-right: auto;
-	margin-left: auto;
-	@media (max-width: 992px) {
-		width: 970px;
-	}
-	@media (max-width: 768px) {
-		width: 750px;
-		padding-left: 0;
-		padding-right: 0;
-	}
+	display: flex;
+	justify-content: center;
+`;
+
+export const Center = styled.div`
+	display: flex;
+	flex-direction: column;
 `;
 
 export const Title = styled.h2`
@@ -32,6 +28,7 @@ export const Title = styled.h2`
 	text-transform: uppercase;
 	color: rgb(215, 208, 195);
 	overflow: hidden;
+	width: 100%;
 	@media (max-width: 768px) {
 		margin-left: 3rem;
 	}
@@ -39,17 +36,10 @@ export const Title = styled.h2`
 
 export const Cards = styled.div`
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(250px, 3fr));
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
 	gap: 40px;
-	width: 95%;
-	margin-bottom: 40px;
-	@media (max-width: 992px) {
-		width: 82%;
-	}
-	@media (max-width: 768px) {
-		width: 45%;
-		margin-left: 3rem;
-	}
+	justify-content: center;
 `;
 
 export const Card = styled.div`
