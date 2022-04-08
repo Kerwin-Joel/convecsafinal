@@ -9,6 +9,7 @@ import img7 from '../../../static/img/page-4_img07.jpg';
 import img8 from '../../../static/img/page-4_img08.jpg';
 import img9 from '../../../static/img/page-4_img09.jpg';
 import {
+	Banner,
 	Card,
 	CardContent,
 	CardImage,
@@ -27,7 +28,6 @@ import {
 	Section,
 	Subtitle,
 	Title,
-	Wrapper,
 } from './style';
 
 const Projects = () => {
