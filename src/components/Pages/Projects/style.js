@@ -1,22 +1,25 @@
 import styled from 'styled-components';
 
-export const ProductsMain = styled.section`
+export const Wrapper = styled.main`
+	height: auto;
+	margin-right: 0;
+	margin-left: 0;
+`;
+
+export const Section = styled.section`
 	background-color: rgb(26, 27, 26);
-	padding: 2.5% 10%;
-	& section {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	& span {
-		display: block;
-		width: 44%;
-		height: 1px;
-		background: #479ed487;
-		@media (max-width: 550px) {
-			width: 51%;
-		}
-	}
+	padding-bottom: 103px;
+	padding-top: 91px;
+`;
+
+export const Container = styled.div`
+	display: flex;
+	justify-content: center;
+`;
+
+export const Center = styled.div`
+	display: flex;
+	flex-direction: column;
 `;
 
 export const Title = styled.h2`
@@ -25,22 +28,18 @@ export const Title = styled.h2`
 	text-transform: uppercase;
 	color: rgb(215, 208, 195);
 	overflow: hidden;
-	width: 33%;
-	@media (max-width: 550px) {
-		font-size: 1.35rem;
-		width: 51%;
+	width: 100%;
+	@media (max-width: 768px) {
+		margin-left: 3rem;
 	}
 `;
 
 export const Cards = styled.div`
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(13rem, 23rem));
-	gap: 2rem;
-	padding-bottom: 5%;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 40px;
 	justify-content: center;
-
-	@media (max-width: 550px) {
-	}
 `;
 
 export const Card = styled.div`
@@ -84,48 +83,47 @@ export const Link = styled.a`
 `;
 
 export const Paragraph = styled.p`
+	font-size: 15px;
 	line-height: 20px;
 `;
 
-export const Banner = styled.section`
-	background-image: url('src/static/img/parallax3.jpg');
-
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	height: 55vh;
+export const Parallax = styled.section`
 	position: relative;
 	overflow: hidden;
-	padding: 5% 10%;
-	justify-content: center;
-	display: flex;
-	flex-direction: column;
-	color: #ffffffe3;
-
-	& span {
-		display: block;
-		position: absolute;
-		width: 0;
-		height: 0;
-		border-left: 50px solid transparent;
-		border-right: 50px solid transparent;
-		border-bottom: 50px solid transparent;
-		border-top: 80px solid #00000024;
-		transform: rotate(-90deg) scale(70);
-		top: 35%;
-	}
-	& span:nth-child(2) {
-		left: -10%;
-	}
 `;
 
-export const ParallaxTitle = styled.h2`
+export const ParallaxImage = styled.div`
+	background-image: url('src/static/img/parallax3.jpg');
+	background-color: inherit;
+	height: 500px;
+	transform: translate3d(0px, -132.533px, 0px);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-position: center center;
+	will-change: transform;
+`;
+
+export const ParallaxWrapper = styled.div`
+	position: relative;
+	padding-bottom: 144px;
+	padding-top: 120px;
+`;
+
+export const ParallaxContent = styled.div`
+	position: relative;
+
+	color: rgb(244, 237, 226);
+`;
+
+export const ParallaxTitle = styled.span`
 	font-size: 80px;
 	font-weight: 700;
 	line-height: 70px;
 	text-transform: uppercase;
-	z-index: 4;
-	position: relative;
 	@media (max-width: 992px) {
 		font-size: 30px;
 		line-height: 35px;
@@ -133,7 +131,5 @@ export const ParallaxTitle = styled.h2`
 `;
 
 export const ParallaxParagraph = styled.p`
-	z-index: 4;
-	position: relative;
 	font-size: 19px;
 `;
