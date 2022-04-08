@@ -5,12 +5,12 @@ import Projects from './Pages/Projects/Projects';
 import { Home } from './Pages/home/Home';
 
 export const App = () => {
-  return (
-    <>
-      <Nav/>
-      <Home/>
-      {/* <Projects/> */}
-      <Footer/>
-    </>
-  )
-}
+	return (
+		<>
+			<Nav />
+			{/* <Home/> */}
+			<Projects />
+			<Footer />
+		</>
+	);
+};
