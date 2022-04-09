@@ -28,13 +28,17 @@ export const Nav = () => {
           <Link to="/">Inicio</Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="about">Nostros</Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="services">Servicios</Link>
         </li>
-        <li><a href="#">Proyectos</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li>
+          <Link to="projects">Proyectos</Link>
+          </li>
+        <li>
+          <Link to="contact">Contacto</Link>
+        </li>
       </List>
       {
         isOpen && (
