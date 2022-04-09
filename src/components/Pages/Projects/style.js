@@ -1,45 +1,37 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.main`
-	height: auto;
-	margin-right: 0;
-	margin-left: 0;
-`;
-
-export const Section = styled.section`
+export const ProductsMain = styled.section`
 	background-color: rgb(26, 27, 26);
-	padding-bottom: 103px;
-	padding-top: 91px;
-`;
-
-export const Container = styled.div`
-	display: flex;
-	justify-content: center;
-`;
-
-export const Center = styled.div`
-	display: flex;
-	flex-direction: column;
+	padding: 2.5% 10%;
+	& section {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	& span {
+		display: block;
+		width: 100%;
+		height: 1px;
+		background: #479ed487;
+	}
 `;
 
 export const Title = styled.h2`
 	font-size: 40px;
-	line-height: 48px;
 	text-transform: uppercase;
 	color: rgb(215, 208, 195);
-	overflow: hidden;
 	width: 100%;
-	@media (max-width: 768px) {
-		margin-left: 3rem;
-	}
 `;
 
 export const Cards = styled.div`
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(3, 1fr);
-	gap: 40px;
-	justify-content: center;
+	grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+	gap: 5rem;
+	padding-bottom: 5%;
+
+	@media (max-width: 550px) {
+		gap: 3rem;
+	}
 `;
 
 export const Card = styled.div`
@@ -83,47 +75,48 @@ export const Link = styled.a`
 `;
 
 export const Paragraph = styled.p`
-	font-size: 15px;
 	line-height: 20px;
 `;
 
-export const Parallax = styled.section`
-	position: relative;
-	overflow: hidden;
-`;
-
-export const ParallaxImage = styled.div`
+export const Banner = styled.section`
 	background-image: url('src/static/img/parallax3.jpg');
-	background-color: inherit;
-	height: 500px;
-	transform: translate3d(0px, -132.533px, 0px);
+
 	background-repeat: no-repeat;
 	background-size: cover;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
 	background-position: center center;
-	will-change: transform;
-`;
-
-export const ParallaxWrapper = styled.div`
+	height: 55vh;
 	position: relative;
-	padding-bottom: 144px;
-	padding-top: 120px;
+	overflow: hidden;
+	padding: 5% 10%;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	color: #ffffffe3;
+
+	& span {
+		display: block;
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-left: 50px solid transparent;
+		border-right: 50px solid transparent;
+		border-bottom: 50px solid transparent;
+		border-top: 80px solid #00000024;
+		transform: rotate(-90deg) scale(70);
+		top: 35%;
+	}
+	& span:nth-child(2) {
+		left: -10%;
+	}
 `;
 
-export const ParallaxContent = styled.div`
-	position: relative;
-
-	color: rgb(244, 237, 226);
-`;
-
-export const ParallaxTitle = styled.span`
+export const ParallaxTitle = styled.h2`
 	font-size: 80px;
 	font-weight: 700;
 	line-height: 70px;
 	text-transform: uppercase;
+	z-index: 4;
+	position: relative;
 	@media (max-width: 992px) {
 		font-size: 30px;
 		line-height: 35px;
@@ -131,5 +124,7 @@ export const ParallaxTitle = styled.span`
 `;
 
 export const ParallaxParagraph = styled.p`
+	z-index: 4;
+	position: relative;
 	font-size: 19px;
 `;
