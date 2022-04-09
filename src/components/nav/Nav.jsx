@@ -4,6 +4,7 @@ import IconNav from '../../images/lista.png'
 import logoS from '../../images/logoS.png'
 import cancel from '../../images/cancel.png'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 export const Nav = () => {
@@ -23,9 +24,15 @@ export const Nav = () => {
           src={IconNav} alt="das" />
       </Menu>
       <List>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Servicios</a></li>
+        <li>
+          <Link to="/">Inicio</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
         <li><a href="#">Proyectos</a></li>
         <li><a href="#">Contacto</a></li>
       </List>
