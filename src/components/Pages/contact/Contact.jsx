@@ -1,11 +1,12 @@
 import React from 'react'
+import { Container, Content, Left, Rigth } from './styles';
 
 export const Contact = () => {
   return (
-    <div>
+    <Container>
       <h1>Contactanos</h1>
-      <div>
-        <div>
+      <Content>
+        <Left>
           <h2>Direccion</h2>
           <p>8901 Marmora Road, Glasgow, D04 89GR.</p>
           <ul>
@@ -14,30 +15,32 @@ export const Contact = () => {
             <li>+1 959 603 6035</li>
             <li>+1 959 603 6035</li>
           </ul>
-        </div>
-        <div>
+        </Left>
+        <Rigth>
           <h2>Escribenos</h2>
           <form action="">
-            <div>
-              <label>Nombre</label>
-              <input type="text" />
-            </div>
-            <div>
-              <label>Email</label>
-              <input type="email" />
-            </div>
-            <div>
-              <label>Telefono</label>
-              <input type="phone" />
-            </div>
-            <div>
+            <section>
+              <div>
+                <label>Nombre</label>
+                <input type="text" />
+              </div>
+              <div>
+                <label>Email</label>
+                <input type="email" />
+              </div>
+              <div>
+                <label>Telefono</label>
+                <input type="phone" />
+              </div>
+            </section>
+            <main>
               <label>Mensaje</label>
               <textarea ></textarea>
-            </div>
+            </main>
             <button>Enviar</button> 
           </form>
-        </div>
-      </div>
-    </div>
+        </Rigth>
+      </Content>
+    </Container>
   )
 }
