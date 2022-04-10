@@ -30,6 +30,7 @@ export const Cards = styled.div`
 	padding-bottom: 5%;
 
 	@media (max-width: 550px) {
+		grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 		gap: 3rem;
 	}
 `;
