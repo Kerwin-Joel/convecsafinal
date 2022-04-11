@@ -14,7 +14,7 @@ import {
 	Icon,
 	FeaturedFlex,
 } from './style';
-import check from '../../../images/check.png';
+import cheque from '../../../images/cheque.png';
 
 
 const Services = () => {
@@ -93,79 +93,79 @@ const Services = () => {
 				<ListCol>
 					<ul>
 						<li>
-              <img src={check} alt="" />
+              <img src={cheque} alt="" />
 							<span >Vestibulum placerat</span>
 						</li>
 						<li>
-              <img src={check} alt="" />
+              <img src={cheque} alt="" />
 							<span >Vehicula tortor</span>
 						</li>
 						<li>
-              <img src={check} alt="" />
+              <img src={cheque} alt="" />
 							<span >Fusce sed elit ac nulla</span>
 						</li>
 						<li>
-              <img src={check} alt="" />
+              <img src={cheque} alt="" />
 							<span >Non sit amet nisl integer lobortis</span>
 						</li>
 						<li>
-              <img src={check} alt="" />
+              <img src={cheque} alt="" />
 							<span >Fermentum hendrerit integer nec odio</span>
 						</li>
 						<li>
-              <img src={check} alt="" />
+              <img src={cheque} alt="" />
 							<span >Vivamus pellentesque risus vitae</span>
 						</li>
 					</ul>
 					<ul>
 						<li>
-              <img src={check} alt="" />
+              <img src={cheque} alt="" />
 							<span >Aliquam quis fringilla lacus</span>
 						</li>
 						<li>
-              <img src={check} alt="" />
+              <img src={cheque} alt="" />
 							<span >Curabitur placerat condimentum</span>
 						</li>
 						<li>
-              <img src={check} alt="" />
+              <img src={cheque} alt="" />
 							<span >Mauris sit amet lacus eget erat</span>
 						</li>
 						<li>
-              <img src={check} alt="" />
+              <img src={cheque} alt="" />
 							<span >Incidunt sodales non</span>
 						</li>
 						<li>
-              <img src={check} alt="" />
+              <img src={cheque} alt="" />
 							<span >Cras ornare erat nec iaculis porttitor</span>
 						</li>
 						<li>
-              <img src={check} alt="" />
+              <img src={cheque} alt="" />
 							<span >Vestibulum molestie condimentum</span>
 						</li>
 					</ul>
 					<ul>
 						<li>
-              <img src={check} alt="" />
+              <img src={cheque} alt="" />
 							<span >Endrerit ultricies</span>
 						</li>
 						<li>
-              <img src={check} alt="" />
+              <img src={cheque} alt="" />
 							<span >Accumsan leo, a bibendum felis</span>
 						</li>
 						<li>
-              <img src={check} alt="" />
+              <img src={cheque} alt="" />
 							<span >Praesent adipiscing quis sem in lobortis</span>
 						</li>
 						<li>
-              <img src={check} alt="" />
+              <img src={cheque} alt="" />
 							<span >Nunc in ornare augue, et lobortis</span>
 						</li>
 						<li>
-              <img src={check} alt="" />
+              <img src={cheque} alt="" />
 							<span >Integer vulputate ligula in elit ultricies</span>
 						</li>
 						<li>
-              <img src={check} alt="" />
+              <img src={cheque} alt="" />
 							<span >Aliquam quis fringilla lacus</span>
 						</li>
 					</ul>
@@ -174,7 +174,7 @@ const Services = () => {
 
 			<FeaturedContainer>
 				<section>
-          <h1>Principales Servicios</h1>
+          <h1>PRINCIPALES SERVICIOS</h1>
           <span></span>
         </section>
 				<FeaturedWrapper>

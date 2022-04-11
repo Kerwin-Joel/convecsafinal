@@ -79,9 +79,8 @@ export const Item = styled.div`
 
 
 export const Valores = styled.div`
-  border: 1px solid black;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   padding: 8% ;
   font-size: .8rem;
 `;

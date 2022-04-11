@@ -11,12 +11,6 @@ export const ServicesMain = styled.section`
     align-items: center;
     padding: 6% 0;
 
-    @media (max-width: 800px) {
-      padding-bottom: 15%;
-    }
-
-
-
 	}
 	& span {
 		display: block;
@@ -44,7 +38,6 @@ export const ServicesMain = styled.section`
   
   @media (max-width: 800px) {
   
-    padding-top: 15%;
     padding-bottom: 55% ;
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
   
@@ -238,6 +231,11 @@ export const FeaturedContainer = styled.section`
     h1{
       font-size: 35px;
       width: 100%;
+      color: #25292e;
+      @media (max-width: 600px) {
+        font-size: calc(25px + 6 * ((100vw - 320px) / 680));
+        margin-right: 5%;
+      }
     }
 
   }
