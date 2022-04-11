@@ -1,13 +1,25 @@
 import styled from 'styled-components';
 
 export const ServicesMain = styled.section`
-	background-color: rgb(26, 27, 26);
-	padding: 2.5% 10%;
-	color: rgb(215, 208, 195);
+	padding: 5% 10%;
+  padding-bottom: 10%;
+
+  @media (max-width: 800px) {
+    
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+
+  }
+
 	& section {
 		display: flex;
-		align-items: center;
-		justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
+
+    @media (max-width: 800px) {
+  
+      padding-bottom: 15%;
+      
+    }
 	}
 	& span {
 		display: block;
@@ -15,50 +27,169 @@ export const ServicesMain = styled.section`
 		height: 1px;
 		background: #479ed487;
 	}
+
+  & img{
+    border-radius: 5px;
+  }
+  & h1{
+    font-size: 35px;
+    color:#25292e;
+    width: 100%;
+  }
+  & p{
+    color:#25292e;
+  }
+  
+  @media (max-width: 800px) {
+  
+    padding-top: 15%;
+    padding-bottom: 55% ;
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  
+  }
+  
+  @media (max-width: 750px) {
+  
+    padding-bottom: 60%;
+    
+  }
+  @media (max-width: 550px) {
+  
+    padding-bottom: 65%;
+    
+  }
+  @media (max-width: 450px) {
+  
+    padding-bottom: 95%;
+    
+  }
 `;
 
-export const Title = styled.h2`
-	font-size: 40px;
+export const Title = styled.h1`
+	font-size: 35px;
 	text-transform: uppercase;
-	color: rgb(215, 208, 195);
 	width: 100%;
+  margin: 0;
+  color:rgb(244, 237, 226)
+  
 `;
 
 export const OverviewContainer = styled.div`
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-	gap: 3rem;
-	padding-bottom: 8%;
-	@media (max-width: 550px) {
-		grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-		gap: 6rem;
-	}
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(350px, 1fr));
+
+  grid-template-rows: 1fr 1fr;
+  gap: 10%;
+
+	@media (max-width: 1350px) {
+    
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 5%;
+
+  }
+  @media (max-width: 780px) {
+    
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 5%;
+
+  }
+  @media (max-width: 350px) {
+    
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+
+  }
 `;
 export const OverviewCol = styled.div`
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(10rem, 22rem));
-	@media (max-width: 550px) {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
 
-		justify-items: center;
-	}
+  display: flex;
+  gap: 10%;
+
+	@media (max-width: 1350px) {
+    align-items: center;
+  }
+  
+  @media (max-width: 1100px) {
+    align-items: center;
+    flex-direction: column;
+
+    h3{
+      padding-top: 10px;
+      text-align: center;
+      
+    }
+
+  }
 
 	& div {
 		@media (max-width: 550px) {
-			text-align: center;
+      & h3 {
+        margin-top: 0;
+        font-size: 26px;
+        line-height: 31px;
+      }
 		}
 
 		& h3 {
+      margin-top: 0;
 			font-size: 26px;
 			line-height: 31px;
 		}
 	}
+  & img{
+    width: 50%;
+    height: fit-content;
+    padding-bottom: 10px;
+    @media (max-width: 1100px) {
+      width: 80%;
+    }
+    @media (max-width: 450px) {
+      width: 100%;
+    }
+  }
+  @media (max-width: 50px) {
+    & p {
+      ${'' /* text-align: justify; */}
+    }
+  }
 `;
 
+
+
+
+
+
 export const ListContainer = styled.section`
-	background-color: rgb(59, 106, 133);
-	padding: 2.5% 10%;
+	background-color: #479ed4;
+	padding: 5% 10%;
+  
+  
+  
+  section{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5%;
+
+    .listLine{
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: white;
+    }
+
+  }
+  @media (max-width: 450px) {
+    padding:15% 10%;
+
+
+    & section{
+      padding-bottom: 15%;
+    }
+
+  }
+  
 `;
 
 export const ListCol = styled.div`
@@ -68,25 +199,57 @@ export const ListCol = styled.div`
 	padding-bottom: 5%;
 	& li {
 		margin-top: 0.925rem;
+    display: flex;
+    align-items: center;
 	}
-	& a {
+	& span {
 		color: rgb(244, 237, 226);
 		text-decoration: none;
+    
 	}
+
+  & h3{
+    color:rgb(244, 237, 226);
+  }
+
+  & img{
+    padding-right: 10px;
+    width: 5%;
+    height: 5%;
+  }
+  
 `;
 
 export const FeaturedContainer = styled.section`
-	background-color: #1a1b1a;
-	padding: 2.5% 10%;
-	color: rgb(215, 208, 195);
+	padding: 5% 10%;
+	${'' /* color: rgb(215, 208, 195); */}
+
+  & section{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5%;
+
+    h1{
+      font-size: 35px;
+      width: 100%;
+    }
+
+  }
+  & span {
+		display: block;
+		width: 100%;
+		height: 1px;
+		background: #479ed487;
+	}
+
 `;
 
 export const FeaturedWrapper = styled.div`
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	gap: 3rem;
 	padding-bottom: 8%;
-	@media (max-width: 980px) {
+	${'' /* @media (max-width: 980px) {
 		gap: 1rem;
 	}
 	@media (max-width: 850px) {
@@ -94,17 +257,18 @@ export const FeaturedWrapper = styled.div`
 	}
 	@media (max-width: 550px) {
 		grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-	}
+	} */}
 
 	& h2 {
 		font-size: 1.275rem;
+    margin-top:0;
 	}
 `;
 
 export const FeaturedFlex = styled.div`
 	display: flex;
 	justify-content: space-evenly;
-
+  gap: 5% ;
 	@media (max-width: 550px) {
 		justify-content: space-between;
 	}
@@ -128,7 +292,6 @@ export const FeaturedFlex = styled.div`
 `;
 
 export const Icon = styled.div`
-	background: #333333;
 	border-radius: 50%;
 	width: 91px;
 	height: 91px;
@@ -147,7 +310,6 @@ export const Banner = styled.section`
 	justify-content: center;
 	display: flex;
 	flex-direction: column;
-	color: #ffffffe3;
 
 	& span {
 		display: block;
@@ -169,18 +331,34 @@ export const Banner = styled.section`
 export const ParallaxTitle = styled.h2`
 	font-size: 80px;
 	font-weight: 700;
-	line-height: 70px;
 	text-transform: uppercase;
 	z-index: 4;
 	position: relative;
-	@media (max-width: 992px) {
-		font-size: 30px;
-		line-height: 35px;
+  color: white;
+  margin-bottom: 0;
+
+  @media (max-width: 992px) {
+		font-size: 40px;
 	}
+  @media (max-width:450px) {
+		font-size: 40px;
+	}
+  @media (max-width:450px) {
+		font-size: 30px;
+	}
+
 `;
 
 export const ParallaxParagraph = styled.p`
 	z-index: 4;
 	position: relative;
-	font-size: 19px;
+	font-size: 25px;
+  color: white;
+
+  @media (max-width: 992px) {
+		font-size: 20px;
+	}
+  @media (max-width:450px) {
+		font-size: 15px;
+  }
 `;

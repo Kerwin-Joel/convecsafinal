@@ -4,6 +4,7 @@ import logoS from '../../images/logoS.png'
 import face from '../../images/face.png'
 import inst from '../../images/inst.png'
 import tuit from '../../images/tuit.png'
+import { Whats } from '../WhatssApp/Whats';
 
 
 export const Footer = () => {
@@ -59,6 +60,7 @@ export const Footer = () => {
           <li><a href=""><img src={tuit} alt="" /></a></li>
         </Redes>
       </div>
+      <Whats/>
     </ContainerFooter>
   )
 }

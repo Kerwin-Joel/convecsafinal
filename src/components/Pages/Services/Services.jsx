@@ -14,13 +14,15 @@ import {
 	Icon,
 	FeaturedFlex,
 } from './style';
+import check from '../../../images/check.png';
+
 
 const Services = () => {
 	return (
 		<>
 			<ServicesMain>
 				<section>
-					<Title>Nuestros Servicios</Title>
+					<h1>Nuestros Servicios</h1>
 					<span></span>
 				</section>
 				<OverviewContainer>
@@ -82,77 +84,99 @@ const Services = () => {
 					</OverviewCol>
 				</OverviewContainer>
 			</ServicesMain>
+
 			<ListContainer>
 				<section>
 					<Title>Lista de servicios</Title>
-					<span></span>
+					<span className="listLine"></span>
 				</section>
 				<ListCol>
 					<ul>
 						<li>
-							<a href="#">Vestibulum placerat</a>
+              <img src={check} alt="" />
+							<span >Vestibulum placerat</span>
 						</li>
 						<li>
-							<a href="#">Vehicula tortor</a>
+              <img src={check} alt="" />
+							<span >Vehicula tortor</span>
 						</li>
 						<li>
-							<a href="#">Fusce sed elit ac nulla</a>
+              <img src={check} alt="" />
+							<span >Fusce sed elit ac nulla</span>
 						</li>
 						<li>
-							<a href="#">Non sit amet nisl integer lobortis</a>
+              <img src={check} alt="" />
+							<span >Non sit amet nisl integer lobortis</span>
 						</li>
 						<li>
-							<a href="#">Fermentum hendrerit integer nec odio</a>
+              <img src={check} alt="" />
+							<span >Fermentum hendrerit integer nec odio</span>
 						</li>
 						<li>
-							<a href="#">Vivamus pellentesque risus vitae</a>
-						</li>
-					</ul>
-					<ul>
-						<li>
-							<a href="#">Aliquam quis fringilla lacus</a>
-						</li>
-						<li>
-							<a href="#">Curabitur placerat condimentum</a>
-						</li>
-						<li>
-							<a href="#">Mauris sit amet lacus eget erat</a>
-						</li>
-						<li>
-							<a href="#">Incidunt sodales non</a>
-						</li>
-						<li>
-							<a href="#">Cras ornare erat nec iaculis porttitor</a>
-						</li>
-						<li>
-							<a href="#">Vestibulum molestie condimentum</a>
+              <img src={check} alt="" />
+							<span >Vivamus pellentesque risus vitae</span>
 						</li>
 					</ul>
 					<ul>
 						<li>
-							<a href="#">Endrerit ultricies</a>
+              <img src={check} alt="" />
+							<span >Aliquam quis fringilla lacus</span>
 						</li>
 						<li>
-							<a href="#">Accumsan leo, a bibendum felis</a>
+              <img src={check} alt="" />
+							<span >Curabitur placerat condimentum</span>
 						</li>
 						<li>
-							<a href="#">Praesent adipiscing quis sem in lobortis</a>
+              <img src={check} alt="" />
+							<span >Mauris sit amet lacus eget erat</span>
 						</li>
 						<li>
-							<a href="#">Nunc in ornare augue, et lobortis</a>
+              <img src={check} alt="" />
+							<span >Incidunt sodales non</span>
 						</li>
 						<li>
-							<a href="#">Integer vulputate ligula in elit ultricies</a>
+              <img src={check} alt="" />
+							<span >Cras ornare erat nec iaculis porttitor</span>
 						</li>
 						<li>
-							<a href="#">Aliquam quis fringilla lacus</a>
+              <img src={check} alt="" />
+							<span >Vestibulum molestie condimentum</span>
+						</li>
+					</ul>
+					<ul>
+						<li>
+              <img src={check} alt="" />
+							<span >Endrerit ultricies</span>
+						</li>
+						<li>
+              <img src={check} alt="" />
+							<span >Accumsan leo, a bibendum felis</span>
+						</li>
+						<li>
+              <img src={check} alt="" />
+							<span >Praesent adipiscing quis sem in lobortis</span>
+						</li>
+						<li>
+              <img src={check} alt="" />
+							<span >Nunc in ornare augue, et lobortis</span>
+						</li>
+						<li>
+              <img src={check} alt="" />
+							<span >Integer vulputate ligula in elit ultricies</span>
+						</li>
+						<li>
+              <img src={check} alt="" />
+							<span >Aliquam quis fringilla lacus</span>
 						</li>
 					</ul>
 				</ListCol>
 			</ListContainer>
 
 			<FeaturedContainer>
-				<Title>Principales Servicios</Title>
+				<section>
+          <h1>Principales Servicios</h1>
+          <span></span>
+        </section>
 				<FeaturedWrapper>
 					<FeaturedFlex>
 						<Icon></Icon>

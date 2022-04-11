@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const ProductsMain = styled.section`
-	background-color: rgb(26, 27, 26);
 	padding: 2.5% 10%;
 	& section {
 		display: flex;
@@ -19,24 +18,25 @@ export const ProductsMain = styled.section`
 export const Title = styled.h2`
 	font-size: 40px;
 	text-transform: uppercase;
-	color: rgb(215, 208, 195);
+	color: #25292e;
 	width: 100%;
 `;
 
 export const Cards = styled.div`
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 	gap: 5rem;
 	padding-bottom: 5%;
 
 	@media (max-width: 550px) {
-		grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 		gap: 3rem;
 	}
 `;
 
 export const Card = styled.div`
-	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  background: #f3f3f3;
+
 `;
 
 export const CardThumb = styled.a`
@@ -49,15 +49,12 @@ export const CardImage = styled.img`
 `;
 
 export const CardContent = styled.div`
-	background-color: rgb(33, 34, 34);
-	color: rgb(215, 208, 195);
 	line-height: 1.5rem;
 	font-size: 0.9rem;
 	padding: 25px 20px 35px;
 `;
 
 export const Subtitle = styled.h6`
-	color: rgb(215, 208, 195);
 	font-size: 20px;
 	line-height: 14px;
 	margin-bottom: 0;
@@ -66,8 +63,9 @@ export const Subtitle = styled.h6`
 
 export const Link = styled.a`
 	text-decoration: none;
-	color: rgb(215, 208, 195);
+	color: #25292e;
 	cursor: pointer;
+  transition: all 0.3s ease-in-out;
 
 	&:hover {
 		text-decoration-color: currentcolor;
@@ -81,7 +79,6 @@ export const Paragraph = styled.p`
 
 export const Banner = styled.section`
 	background-image: url('src/static/img/parallax3.jpg');
-
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -109,6 +106,10 @@ export const Banner = styled.section`
 	& span:nth-child(2) {
 		left: -10%;
 	}
+
+  @media (max-width: 350px) {
+    padding: 25% 10%;
+  }
 `;
 
 export const ParallaxTitle = styled.h2`

@@ -49,11 +49,21 @@ export const Nav = () => {
                 onClick={handleOpen}
                 className='close' src={cancel} alt="" />
             </div>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Proyectos</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li>
+              <Link onClick={handleOpen}  to="/">Inicio</Link>
+            </li>
+            <li>
+              <Link onClick={handleOpen} to="about">Nostros</Link>
+            </li>
+            <li>
+              <Link onClick={handleOpen} to="services">Servicios</Link>
+            </li>
+            <li>
+              <Link onClick={handleOpen} to="projects">Proyectos</Link>
+              </li>
+            <li>
+              <Link onClick={handleOpen} to="contact">Contacto</Link>
+            </li>
           </ModalMenu>
         )
       }
