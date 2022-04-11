@@ -1,25 +1,22 @@
 import styled from 'styled-components';
 
 export const ServicesMain = styled.section`
-	padding: 5% 10%;
+	padding: 2.5% 10%;
   padding-bottom: 10%;
 
-  @media (max-width: 800px) {
-    
-    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
-
-  }
+  
 
 	& section {
 		display: flex;
     align-items: center;
-    padding-bottom: 10%;
+    padding: 6% 0;
 
     @media (max-width: 800px) {
-  
       padding-bottom: 15%;
-      
     }
+
+
+
 	}
 	& span {
 		display: block;
@@ -31,10 +28,15 @@ export const ServicesMain = styled.section`
   & img{
     border-radius: 5px;
   }
-  & h1{
-    font-size: 35px;
+  & h2{
+    font-size: 40px;
     color:#25292e;
     width: 100%;
+    margin:0;
+    @media (max-width: 600px) {
+      font-size: calc(25px + 6 * ((100vw - 320px) / 680));
+      margin-right: 5%;
+    }
   }
   & p{
     color:#25292e;
@@ -70,7 +72,11 @@ export const Title = styled.h1`
 	text-transform: uppercase;
 	width: 100%;
   margin: 0;
-  color:rgb(244, 237, 226)
+  color:rgb(244, 237, 226);
+  @media (max-width: 600px) {
+    font-size: calc(25px + 6 * ((100vw - 320px) / 680));
+    margin-right: 5%;
+  }
   
 `;
 

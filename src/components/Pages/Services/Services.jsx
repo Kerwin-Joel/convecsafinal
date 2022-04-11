@@ -22,7 +22,7 @@ const Services = () => {
 		<>
 			<ServicesMain>
 				<section>
-					<h1>Nuestros Servicios</h1>
+					<h2>SERVICIOS</h2>
 					<span></span>
 				</section>
 				<OverviewContainer>

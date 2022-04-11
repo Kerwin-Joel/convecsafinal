@@ -29,7 +29,7 @@ const Projects = () => {
 		<>
 			<ProductsMain>
 				<section>
-					<Title>our products</Title>
+					<Title>Proyectos</Title>
 					<span></span>
 				</section>
 				<Cards>

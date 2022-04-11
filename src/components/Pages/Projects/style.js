@@ -2,10 +2,12 @@ import styled from 'styled-components';
 
 export const ProductsMain = styled.section`
 	padding: 2.5% 10%;
+  
 	& section {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+    padding:6% 0 ;
 	}
 	& span {
 		display: block;
@@ -20,6 +22,13 @@ export const Title = styled.h2`
 	text-transform: uppercase;
 	color: #25292e;
 	width: 100%;
+  margin-top:0;
+  margin-bottom:0;
+
+  @media (max-width: 600px) {
+    font-size: calc(25px + 6 * ((100vw - 320px) / 680));
+    margin-right: 5%;
+  }
 `;
 
 export const Cards = styled.div`
@@ -129,4 +138,9 @@ export const ParallaxParagraph = styled.p`
 	z-index: 4;
 	position: relative;
 	font-size: 19px;
+
+  @media (max-width: 350px) {
+    font-size: 15px;
+  }
+
 `;

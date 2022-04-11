@@ -8,7 +8,7 @@ export const Contact = () => {
       <BannerAux/>
       <Container>
         <section>
-          <h1>Contactanos</h1>
+          <h1>CONTACTO</h1>
           <span></span>
         </section>
         <Content>
