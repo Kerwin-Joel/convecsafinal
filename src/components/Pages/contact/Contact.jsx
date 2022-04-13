@@ -1,13 +1,18 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Container, Content, Left, Rigth } from './styles';
 import { BannerAux } from '../banneAux/BannerAux';
+import Loader from '../../utils/Loader';
+import { Toaster, toast } from 'react-hot-toast';
 
 export const Contact = () => {
+	const [error, setError] = useState(null);
+	const [loading, setLoading] = useState(false);
 	const form = useRef();
 
 	const sendEmail = e => {
 		e.preventDefault();
+		setLoading(true);
 
 		emailjs
 			.sendForm(
@@ -18,9 +23,13 @@ export const Contact = () => {
 			)
 			.then(
 				result => {
+					setLoading(false);
+					toast.success('Enviado');
 					console.log(result.text);
 				},
 				error => {
+					setLoading(false);
+					toast.error('Hubo un problema, no se pudo enviar el mensaje');
 					console.log(error.text);
 				}
 			);
@@ -49,6 +58,7 @@ export const Contact = () => {
 					</Left>
 					<Rigth>
 						<h2>Escríbenos</h2>
+
 						<form ref={form} onSubmit={sendEmail}>
 							<section>
 								<div>
@@ -68,8 +78,9 @@ export const Contact = () => {
 								<textarea name="message"></textarea>
 								<label>Mensaje</label>
 							</main>
-							<button>Enviar</button>
+							<button> {loading ? <Loader /> : 'Enviar'}</button>
 						</form>
+						<Toaster position="top-center" reverseOrder={false} />
 					</Rigth>
 				</Content>
 			</Container>
