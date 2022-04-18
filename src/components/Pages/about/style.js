@@ -2,13 +2,13 @@ import styled from 'styled-components' ;
 
 export const AboutContainer = styled.div`
   color:#25292e;
+
 `;
 
 export const Overview = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   padding: 0 8%;
-
   & p {
     font-size: .77rem;
   }
@@ -83,6 +83,8 @@ export const Valores = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   padding: 8% ;
   font-size: .8rem;
+  padding-bottom: 10%;
+
 `;
 export const ValoresItem = styled.div`
   padding: 0 4%;
@@ -120,7 +122,7 @@ export const ValoresItem = styled.div`
   }
 
   & .name{
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
   }
 `;

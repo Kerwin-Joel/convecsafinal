@@ -3,8 +3,11 @@ import styled from 'styled-components';
 export const Navigation = styled.nav`
 	display: flex;
   justify-content: space-between;
-  background-color: #479ed45c;
-  padding:1% 10%;
+  background-color: #479ed4;
+  ${'' /* padding:1% 0%; */}
+  ${'' /* position: fixed; */}
+  z-index:10;
+  width:100%;
 
   @media (max-width: 980px) {
     flex-direction: column;
@@ -19,20 +22,32 @@ export const Navigation = styled.nav`
 `;
 
 export const LogoDesktop = styled.div`
+  padding-left:10%;
+  padding-bottom:1.5%;
+  padding-top:1.5%;
   & img {
     width: 75px;
-    height: 60px;
+    height: 65px;
+  }
+  @media (max-width: 980px) {
+    padding-left: 0;
+
+  }
+  @media (max-width: 600px) {
+    padding-left: 10%;
   }
   
 `;
 
 export const Menu = styled.div`
+  padding-right:10%;
+
   @media (min-width: 600px) {
     display: none;
   }
   & img {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     cursor: pointer;
   }
 `;
@@ -40,10 +55,14 @@ export const Menu = styled.div`
 export const List = styled.ul`
   display: flex;
   align-items: center;
+  padding-right:10%;
+
   & li{
     border-radius: 5px;
     padding:10px 0;
     transition: all 0.25s ease-in-out;
+    margin: 0 5px;
+
     &:nth-child(1){
       background-color: #3c8dc7;
     }
@@ -55,7 +74,7 @@ export const List = styled.ul`
     }
     & a{
       transition: all 0.25s ease-in-out;
-      color: black;
+      color: white;
       padding: 10px 35px;
     }
   }
@@ -63,6 +82,8 @@ export const List = styled.ul`
     & li a{
       padding: 10px 20px;
     }
+    padding-right: 0;
+
   }
   @media (max-width: 690px) {
     & li a{
@@ -87,6 +108,7 @@ export const ModalMenu = styled.ul`
   transition: all 0.25s ease-in-out;
   animation: 1s slidein 1;
 
+
   & li,li:hover{
     transition: all 0.25s ease-in-out;
     padding: 20px;
@@ -105,6 +127,7 @@ export const ModalMenu = styled.ul`
     padding: 16px 55% ;
     color: gray;
     padding-left: 20px;
+    
   }
   & .close{
     animation: 1s topin 1;
@@ -115,7 +138,7 @@ export const ModalMenu = styled.ul`
     cursor: pointer;
   }
   & img{
-    width:50%;
+    width:70%;
     padding: 20px;
     display:block;
     margin: 0 auto;

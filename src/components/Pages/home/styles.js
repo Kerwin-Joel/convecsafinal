@@ -3,6 +3,9 @@ import styled from 'styled-components';
 export const Img = styled.img`
   display: width: 100vw;
 `;
+export const ButtonsImg = styled.img`
+  width: 100%;
+`;
 export const CustomerSay = styled.div`
   background: #479ed4;
   padding: 3% 20%;

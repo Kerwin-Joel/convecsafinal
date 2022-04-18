@@ -8,6 +8,8 @@ import inst from '../../../images/face.png'
 import face from '../../../images/inst.png'
 import servicio from '../../../images/servicio.jpg'
 import man from '../../../images/man.jpg'
+import next from '../../../images/next.png'
+import previous from '../../../images/previous.png'
 import { CustomerSay,
         Card, 
         ServicesMain, 
@@ -16,14 +18,15 @@ import { CustomerSay,
         Item, 
         ItemContainer,
         Banner,
-        Responsability } from './styles';
+        Responsability, 
+        ButtonsImg} from './styles';
 
 export const Home = () => {
   return (
     <>
       <CarouselProvider
         naturalSlideWidth={100}
-        naturalSlideHeight={50}
+        naturalSlideHeight={30}
         totalSlides={3}
         visibleSlides={1}
         isPlaying={true}
@@ -40,8 +43,12 @@ export const Home = () => {
             <Image src={reac} />
           </Slide>
         </Slider>
-        <ButtonBack className="buttonBack">{"<"}</ButtonBack>
-        <ButtonNext className="buttonNext">{">"}</ButtonNext>
+        <ButtonBack className="buttonBack">
+          <ButtonsImg src={previous} alt=""/>
+        </ButtonBack>
+        <ButtonNext className="buttonNext">
+          <ButtonsImg src={next} alt=""/>
+        </ButtonNext>
       </CarouselProvider>
       
       <CustomerSay>

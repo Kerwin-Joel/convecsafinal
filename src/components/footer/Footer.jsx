@@ -5,19 +5,30 @@ import face from '../../images/face.png'
 import inst from '../../images/inst.png'
 import tuit from '../../images/tuit.png'
 import { Whats } from '../WhatssApp/Whats';
+import { Link } from 'react-router-dom';
 
 
 export const Footer = () => {
   return (
     <ContainerFooter>
       <div>
-        <h2>Menu</h2>
+        <h2>Menú</h2>
         <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Proyectos</a></li>
-          <li><a href="#">Contactanos</a></li>
+        <li>
+            <Link to="/">Inicio</Link>
+          </li>
+          <li>
+            <Link to="about">Nostros</Link>
+          </li>
+          <li>
+            <Link to="services">Servicios</Link>
+          </li>
+          <li>
+            <Link to="projects">Proyectos</Link>
+            </li>
+          <li>
+            <Link to="contact">Contacto</Link>
+          </li>
         </ul>
       </div>
       <div>
@@ -31,19 +42,19 @@ export const Footer = () => {
         </ul>
       </div>
       <div>
-        <h2>Contactanos</h2>
+        <h2>Contáctanos</h2>
         <p className='margen'>Direccion para agregar </p>
         <div>
           <div className='margen'>
-            <span>Telefono 1:</span>
+            <span>Teléfono 1: </span>
             <span>numero</span>
           </div>
           <div className='margen'>
-            <span>Telefono 1:</span>
+            <span>Teléfono 1: </span>
             <span>numero</span>
           </div>
           <div className='margen'>
-            <span>Telefono 1:</span>
+            <span>Teléfono 1: </span>
             <span>numero</span>
           </div>
         </div>

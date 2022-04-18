@@ -14,12 +14,14 @@ import {
 	Icon,
 	FeaturedFlex,
 } from './style';
+import { BannerAux } from './../banneAux/BannerAux';
 import cheque from '../../../images/cheque.png';
 
 
 const Services = () => {
 	return (
 		<>
+      <BannerAux/>
 			<ServicesMain>
 				<section>
 					<h2>SERVICIOS</h2>

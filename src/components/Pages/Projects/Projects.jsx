@@ -8,7 +8,8 @@ import img6 from '../../../static/img/page-4_img06.jpg';
 import img7 from '../../../static/img/page-4_img07.jpg';
 import img8 from '../../../static/img/page-4_img08.jpg';
 import img9 from '../../../static/img/page-4_img09.jpg';
-import {
+import  {BannerAux } from './../banneAux/BannerAux';
+import { 
 	Banner,
 	Card,
 	CardContent,
@@ -27,6 +28,7 @@ import {
 const Projects = () => {
 	return (
 		<>
+      <BannerAux/>
 			<ProductsMain>
 				<section>
 					<Title>Proyectos</Title>

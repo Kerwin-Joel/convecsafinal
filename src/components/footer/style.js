@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const ContainerFooter = styled.footer`
-  background-color: #3333338c;
+  background-color: #333333;
   display:grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
-  align-items: center;
-  padding: 0 10%;
+  align-items: start;
+  padding: 3% 10%;
   color: white;
 
   & img{
@@ -20,12 +20,36 @@ export const ContainerFooter = styled.footer`
     height: 50px;
   }
 
+  & li{
+    padding: 0.4rem 0;
+  }
+  & a{
+    display: inline-block;
+  }
+  & a:after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    background-color: #479ed4;
+    margin: 0.1rem 0;
+    transition: width 0.3s ease-in-out;
+  }
+  & a:hover:after{
+    width: 100%;
+  }
+
   & a,span,p{
-    color: #232323;
+    color: #9d9d9d;
+    padding: 0;
   }
   
   & .margen{
     padding: 3.5px 0;
+  }
+  
+  & h2{
+    margin-top: 0;
   }
 
 
@@ -33,13 +57,18 @@ export const ContainerFooter = styled.footer`
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     text-align:center;
+    padding: 10%;
+
+    & li{
+      padding: 0.05rem 0;
+    }
+
   }
   @media (max-width: 600px) {
     grid-template-columns: repeat(1, 1fr);
     text-align:center;
     
     & a{
-      display: block;
       padding: 3.5px 0;
     }
 
